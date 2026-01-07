@@ -1,0 +1,242 @@
+Started GET "/nmaplowercheck1763929008" for 10.89.1.26 at 2025-11-24 01:46:48 +0530
+Started POST "/sdk" for 10.89.1.26 at 2025-11-24 01:46:49 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/sdk"):
+  
+lib/gitlab/middleware/basic_health_check.rb:25:in `call'
+lib/gitlab/middleware/handle_ip_spoof_attack_error.rb:25:in `call'
+lib/gitlab/middleware/request_context.rb:21:in `call'
+config/initializers/fix_local_cache_middleware.rb:11:in `call'
+lib/gitlab/metrics/requests_rack_middleware.rb:76:in `call'
+lib/gitlab/middleware/release_env.rb:12:in `call'
+Processing by ApplicationController#route_not_found as HTML
+  Parameters: {"unmatched_route"=>"nmaplowercheck1763929008"}
+Redirected to http://192.168.0.99:8080/users/sign_in
+Completed 302 Found in 57ms (ActiveRecord: 5.1ms | Elasticsearch: 0.0ms | Allocations: 10388)
+Started GET "/HNAP1" for 10.89.1.26 at 2025-11-24 01:46:49 +0530
+Started GET "/evox/about" for 10.89.1.26 at 2025-11-24 01:46:49 +0530
+Processing by ApplicationController#route_not_found as HTML
+  Parameters: {"unmatched_route"=>"HNAP1"}
+Redirected to http://192.168.0.99:8080/users/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 4786)
+Processing by ApplicationController#route_not_found as HTML
+  Parameters: {"unmatched_route"=>"evox/about"}
+Started GET "/users/sign_in" for 10.89.1.26 at 2025-11-24 01:46:49 +0530
+Processing by SessionsController#new as HTML
+Redirected to http://192.168.0.99:8080/users/sign_in
+Completed 302 Found in 34ms (ActiveRecord: 2.8ms | Elasticsearch: 0.0ms | Allocations: 8748)
+Completed 200 OK in 569ms (Views: 443.4ms | ActiveRecord: 39.7ms | Elasticsearch: 0.0ms | Allocations: 182824)
+Started GET "/" for 10.89.1.26 at 2025-11-24 01:46:50 +0530
+Processing by RootController#index as HTML
+Redirected to http://192.168.0.99/users/sign_in
+Filter chain halted as :redirect_unlogged_user rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 4710)
+Started GET "/nmaplowercheck1764448960" for 10.89.1.26 at 2025-11-30 02:12:40 +0530
+Started POST "/sdk" for 10.89.1.26 at 2025-11-30 02:12:41 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/sdk"):
+  
+lib/gitlab/middleware/basic_health_check.rb:25:in `call'
+lib/gitlab/middleware/handle_ip_spoof_attack_error.rb:25:in `call'
+lib/gitlab/middleware/request_context.rb:21:in `call'
+config/initializers/fix_local_cache_middleware.rb:11:in `call'
+lib/gitlab/metrics/requests_rack_middleware.rb:76:in `call'
+lib/gitlab/middleware/release_env.rb:12:in `call'
+Processing by ApplicationController#route_not_found as HTML
+  Parameters: {"unmatched_route"=>"nmaplowercheck1764448960"}
+Redirected to http://192.168.0.99:8080/users/sign_in
+Completed 302 Found in 54ms (ActiveRecord: 4.7ms | Elasticsearch: 0.0ms | Allocations: 9840)
+Started GET "/evox/about" for 10.89.1.26 at 2025-11-30 02:12:41 +0530
+Started GET "/HNAP1" for 10.89.1.26 at 2025-11-30 02:12:41 +0530
+Processing by ApplicationController#route_not_found as HTML
+  Parameters: {"unmatched_route"=>"HNAP1"}
+Processing by ApplicationController#route_not_found as HTML
+  Parameters: {"unmatched_route"=>"evox/about"}
+Redirected to http://192.168.0.99:8080/users/sign_in
+Completed 302 Found in 41ms (ActiveRecord: 2.8ms | Elasticsearch: 0.0ms | Allocations: 8778)
+Redirected to http://192.168.0.99:8080/users/sign_in
+Completed 302 Found in 37ms (ActiveRecord: 3.0ms | Elasticsearch: 0.0ms | Allocations: 8738)
+Started GET "/users/sign_in" for 10.89.1.26 at 2025-11-30 02:12:41 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 580ms (Views: 525.4ms | ActiveRecord: 21.4ms | Elasticsearch: 0.0ms | Allocations: 171524)
+Started GET "/" for 10.89.1.26 at 2025-11-30 02:12:42 +0530
+Processing by RootController#index as HTML
+Redirected to http://192.168.0.99/users/sign_in
+Filter chain halted as :redirect_unlogged_user rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 4039)
+Started GET "/" for 10.89.1.26 at 2025-11-30 02:27:55 +0530
+Processing by RootController#index as HTML
+Redirected to http://192.168.191.179:8080/users/sign_in
+Filter chain halted as :redirect_unlogged_user rendered or redirected
+Completed 302 Found in 60ms (ActiveRecord: 13.2ms | Elasticsearch: 0.0ms | Allocations: 13040)
+Started GET "/users/sign_in" for 10.89.1.26 at 2025-11-30 02:27:56 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 457ms (Views: 371.0ms | ActiveRecord: 39.0ms | Elasticsearch: 0.0ms | Allocations: 180282)
+Started POST "/users/sign_in" for 10.89.1.26 at 2025-11-30 02:28:11 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"login"=>"khaefner", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+Completed 401 Unauthorized in 24ms (ActiveRecord: 4.6ms | Elasticsearch: 0.0ms | Allocations: 5589)
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"login"=>"khaefner", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+Completed 200 OK in 403ms (Views: 285.0ms | ActiveRecord: 20.7ms | Elasticsearch: 0.0ms | Allocations: 168475)
+Started GET "/users/sign_up" for 10.89.1.26 at 2025-11-30 02:28:45 +0530
+Processing by RegistrationsController#new as HTML
+Completed 200 OK in 316ms (Views: 238.0ms | ActiveRecord: 0.6ms | Elasticsearch: 0.0ms | Allocations: 40061)
+Started GET "/favicon.ico" for 10.89.1.26 at 2025-11-30 02:29:00 +0530
+Started GET "/explore" for 10.89.1.26 at 2025-11-30 02:29:02 +0530
+Processing by Explore::ProjectsController#index as HTML
+Completed 200 OK in 1830ms (Views: 1745.8ms | ActiveRecord: 28.1ms | Elasticsearch: 0.0ms | Allocations: 222921)
+Started GET "/explore/projects/starred" for 10.89.1.26 at 2025-11-30 02:29:10 +0530
+Processing by Explore::ProjectsController#starred as HTML
+Completed 200 OK in 63ms (Views: 40.7ms | ActiveRecord: 3.7ms | Elasticsearch: 0.0ms | Allocations: 22360)
+Started GET "/explore/projects/trending" for 10.89.1.26 at 2025-11-30 02:29:11 +0530
+Processing by Explore::ProjectsController#trending as HTML
+Completed 200 OK in 384ms (Views: 331.5ms | ActiveRecord: 12.1ms | Elasticsearch: 0.0ms | Allocations: 214935)
+Started GET "/help" for 10.89.1.26 at 2025-11-30 02:29:13 +0530
+Processing by HelpController#index as HTML
+Completed 200 OK in 244ms (Views: 201.3ms | ActiveRecord: 1.0ms | Elasticsearch: 0.0ms | Allocations: 122447)
+Started GET "/explore" for 10.89.1.26 at 2025-11-30 02:29:24 +0530
+Processing by Explore::ProjectsController#index as HTML
+Completed 200 OK in 54ms (Views: 38.4ms | ActiveRecord: 1.8ms | Elasticsearch: 0.0ms | Allocations: 18527)
+Started GET "/" for 10.89.1.26 at 2025-11-30 02:29:25 +0530
+Processing by RootController#index as HTML
+Redirected to http://192.168.191.179:8080/users/sign_in
+Filter chain halted as :redirect_unlogged_user rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 4034)
+Started GET "/users/sign_in" for 10.89.1.26 at 2025-11-30 02:29:25 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 32ms (Views: 16.2ms | ActiveRecord: 1.4ms | Elasticsearch: 0.0ms | Allocations: 12251)
+Started GET "/users/sign_up" for 10.89.1.26 at 2025-11-30 02:29:29 +0530
+Processing by RegistrationsController#new as HTML
+Completed 200 OK in 210ms (Views: 175.4ms | ActiveRecord: 2.6ms | Elasticsearch: 0.0ms | Allocations: 43057)
+Started GET "/help" for 10.89.1.26 at 2025-11-30 02:29:34 +0530
+Processing by HelpController#index as HTML
+Completed 200 OK in 201ms (Views: 189.8ms | ActiveRecord: 0.5ms | Elasticsearch: 0.0ms | Allocations: 122079)
+Started GET "/-/whats_new" for 10.89.1.26 at 2025-11-30 02:29:46 +0530
+Processing by WhatsNewController#index as JSON
+Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 0.0ms | Elasticsearch: 0.0ms | Allocations: 4784)
+Creating scope :without_statuses. Overwriting existing method CommitStatus.without_statuses.
+Creating scope :without_statuses. Overwriting existing method CommitStatus.without_statuses.
+An enum element in Ci::Runner uses the prefix 'not_'. This will cause a conflict with auto generated negative scopes.
+An enum element in Ci::Runner uses the prefix 'not_'. This will cause a conflict with auto generated negative scopes.
+Creating scope :in_pipelines. Overwriting existing method Ci::Build.in_pipelines.
+Creating scope :in_pipelines. Overwriting existing method Ci::Build.in_pipelines.
+Creating scope :with_api_entity_associations. Overwriting existing method Issue.with_api_entity_associations.
+Creating scope :with_api_entity_associations. Overwriting existing method Issue.with_api_entity_associations.
+Creating scope :of_projects. Overwriting existing method MergeRequest.of_projects.
+Creating scope :join_project. Overwriting existing method MergeRequest.join_project.
+Creating scope :references_project. Overwriting existing method MergeRequest.references_project.
+Creating scope :of_projects. Overwriting existing method MergeRequest.of_projects.
+Creating scope :join_project. Overwriting existing method MergeRequest.join_project.
+Creating scope :references_project. Overwriting existing method MergeRequest.references_project.
+Creating scope :system. Overwriting existing method Note.system.
+Creating scope :system. Overwriting existing method Note.system.
+Creating scope :order_created_desc. Overwriting existing method Packages::Package.order_created_desc.
+Creating scope :order_name_desc. Overwriting existing method Packages::Package.order_name_desc.
+Creating scope :order_created_desc. Overwriting existing method Packages::Package.order_created_desc.
+Creating scope :order_name_desc. Overwriting existing method Packages::Package.order_name_desc.
+An enum element in UserStatus uses the prefix 'not_'. This will cause a conflict with auto generated negative scopes.
+An enum element in UserStatus uses the prefix 'not_'. This will cause a conflict with auto generated negative scopes.
+Raven 3.0.4 configured not to capture errors: DSN not set
+Raven 3.0.4 configured not to capture errors: DSN not set
+Creating scope :without_statuses. Overwriting existing method Ci::Pipeline.without_statuses.
+Creating scope :without_statuses. Overwriting existing method Ci::Pipeline.without_statuses.
+Creating scope :open. Overwriting existing method AlertManagement::Alert.open.
+Creating scope :open. Overwriting existing method AlertManagement::Alert.open.
+Creating scope :order_name_asc. Overwriting existing method Label.order_name_asc.
+Creating scope :order_name_desc. Overwriting existing method Label.order_name_desc.
+Creating scope :order_name_asc. Overwriting existing method Label.order_name_asc.
+Creating scope :order_name_desc. Overwriting existing method Label.order_name_desc.
+Creating scope :without_statuses. Overwriting existing method Ci::Stage.without_statuses.
+Creating scope :created. Overwriting existing method Ci::Stage.created.
+Creating scope :pending. Overwriting existing method Ci::Stage.pending.
+Creating scope :running. Overwriting existing method Ci::Stage.running.
+Creating scope :success. Overwriting existing method Ci::Stage.success.
+Creating scope :failed. Overwriting existing method Ci::Stage.failed.
+Creating scope :canceled. Overwriting existing method Ci::Stage.canceled.
+Creating scope :skipped. Overwriting existing method Ci::Stage.skipped.
+Creating scope :manual. Overwriting existing method Ci::Stage.manual.
+Creating scope :scheduled. Overwriting existing method Ci::Stage.scheduled.
+Creating scope :preparing. Overwriting existing method Ci::Stage.preparing.
+Creating scope :waiting_for_resource. Overwriting existing method Ci::Stage.waiting_for_resource.
+Creating scope :without_statuses. Overwriting existing method Ci::Stage.without_statuses.
+Creating scope :created. Overwriting existing method Ci::Stage.created.
+Creating scope :pending. Overwriting existing method Ci::Stage.pending.
+Creating scope :running. Overwriting existing method Ci::Stage.running.
+Creating scope :success. Overwriting existing method Ci::Stage.success.
+Creating scope :failed. Overwriting existing method Ci::Stage.failed.
+Creating scope :canceled. Overwriting existing method Ci::Stage.canceled.
+Creating scope :skipped. Overwriting existing method Ci::Stage.skipped.
+Creating scope :manual. Overwriting existing method Ci::Stage.manual.
+Creating scope :scheduled. Overwriting existing method Ci::Stage.scheduled.
+Creating scope :preparing. Overwriting existing method Ci::Stage.preparing.
+Creating scope :waiting_for_resource. Overwriting existing method Ci::Stage.waiting_for_resource.
+Creating scope :open. Overwriting existing method ExternalPullRequest.open.
+Creating scope :open. Overwriting existing method ExternalPullRequest.open.
+Creating scope :order_name_asc. Overwriting existing method Member.order_name_asc.
+Creating scope :order_name_desc. Overwriting existing method Member.order_name_desc.
+Creating scope :order_name_asc. Overwriting existing method Member.order_name_asc.
+Creating scope :order_name_desc. Overwriting existing method Member.order_name_desc.
+Creating scope :with_user. Overwriting existing method GroupMember.with_user.
+Creating scope :with_user. Overwriting existing method GroupMember.with_user.
+Creating scope :system. Overwriting existing method PrometheusMetric.system.
+Creating scope :system. Overwriting existing method PrometheusMetric.system.
+Creating scope :system. Overwriting existing method Gitlab::DatabaseImporters::CommonMetrics::PrometheusMetric.system.
+Creating scope :system. Overwriting existing method Gitlab::DatabaseImporters::CommonMetrics::PrometheusMetric.system.
+Started GET "/" for  at 2025-11-30 03:02:38 +0530
+Processing by RootController#index as HTML
+Redirected to http://example.org/users/sign_in
+Filter chain halted as :redirect_unlogged_user rendered or redirected
+Completed 302 Found in 41ms (ActiveRecord: 9.6ms | Elasticsearch: 0.0ms | Allocations: 11699)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 03:26:17 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 836ms (Views: 563.5ms | ActiveRecord: 172.6ms | Elasticsearch: 0.0ms | Allocations: 183093)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 03:42:52 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 575ms (Views: 467.1ms | ActiveRecord: 39.2ms | Elasticsearch: 0.0ms | Allocations: 181060)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 03:56:18 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 424ms (Views: 331.9ms | ActiveRecord: 37.3ms | Elasticsearch: 0.0ms | Allocations: 181062)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 04:17:29 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 92ms (Views: 22.0ms | ActiveRecord: 27.1ms | Elasticsearch: 0.0ms | Allocations: 20782)
+Started GET "/" for 10.89.1.27 at 2025-11-30 04:25:21 +0530
+Processing by RootController#index as HTML
+Redirected to http://192.168.191.179:8080/users/sign_in
+Filter chain halted as :redirect_unlogged_user rendered or redirected
+Completed 302 Found in 57ms (ActiveRecord: 16.3ms | Elasticsearch: 0.0ms | Allocations: 13586)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 04:25:21 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 69ms (Views: 17.3ms | ActiveRecord: 15.7ms | Elasticsearch: 0.0ms | Allocations: 20616)
+Started POST "/users/sign_in" for 10.89.1.27 at 2025-11-30 04:25:32 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"login"=>"khaefner", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+Completed 401 Unauthorized in 18ms (ActiveRecord: 2.7ms | Elasticsearch: 0.0ms | Allocations: 4485)
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"login"=>"khaefner", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+Completed 200 OK in 98ms (Views: 20.5ms | ActiveRecord: 1.3ms | Elasticsearch: 0.0ms | Allocations: 10332)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 04:25:43 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 33ms (Views: 17.1ms | ActiveRecord: 1.5ms | Elasticsearch: 0.0ms | Allocations: 11307)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 05:01:54 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 92ms (Views: 23.1ms | ActiveRecord: 19.3ms | Elasticsearch: 0.0ms | Allocations: 21771)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 05:08:18 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 70ms (Views: 17.6ms | ActiveRecord: 15.6ms | Elasticsearch: 0.0ms | Allocations: 19931)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 05:14:29 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 86ms (Views: 21.0ms | ActiveRecord: 20.8ms | Elasticsearch: 0.0ms | Allocations: 20782)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 19:52:16 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 766ms (Views: 609.6ms | ActiveRecord: 40.1ms | Elasticsearch: 0.0ms | Allocations: 183661)
+Started POST "/users/sign_in" for 10.89.1.27 at 2025-11-30 19:52:25 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"login"=>"khaefner", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+Completed 401 Unauthorized in 90ms (ActiveRecord: 24.3ms | Elasticsearch: 0.0ms | Allocations: 15907)
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"login"=>"khaefner", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+Completed 200 OK in 559ms (Views: 431.2ms | ActiveRecord: 20.3ms | Elasticsearch: 0.0ms | Allocations: 169213)
+Started GET "/users/sign_in" for 10.89.1.27 at 2025-11-30 19:54:41 +0530
+Processing by SessionsController#new as HTML
+Completed 200 OK in 409ms (Views: 313.1ms | ActiveRecord: 38.3ms | Elasticsearch: 0.0ms | Allocations: 181099)

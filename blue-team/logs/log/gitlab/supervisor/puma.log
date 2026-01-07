@@ -1,0 +1,29 @@
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+{"timestamp":"2025-11-29T21:31:49.419Z","pid":611,"message":"Puma starting in cluster mode..."}
+{"timestamp":"2025-11-29T21:31:49.419Z","pid":611,"message":"* Puma version: 5.1.1 (ruby 2.7.1-p83) (\"At Your Service\")"}
+{"timestamp":"2025-11-29T21:31:49.419Z","pid":611,"message":"*  Min threads: 1"}
+{"timestamp":"2025-11-29T21:31:49.419Z","pid":611,"message":"*  Max threads: 16"}
+{"timestamp":"2025-11-29T21:31:49.419Z","pid":611,"message":"*  Environment: production"}
+{"timestamp":"2025-11-29T21:31:49.419Z","pid":611,"message":"*   Master PID: 611"}
+{"timestamp":"2025-11-29T21:31:49.419Z","pid":611,"message":"*      Workers: 3"}
+{"timestamp":"2025-11-29T21:31:49.420Z","pid":611,"message":"*     Restarts: (✔) hot (✖) phased"}
+{"timestamp":"2025-11-29T21:31:49.420Z","pid":611,"message":"* Preloading application"}
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Missing Rails.application.secrets.openid_connect_signing_key for production environment. The secret will be generated and stored in config/secrets.yml.
+{"timestamp":"2025-11-29T21:32:41.730Z","pid":611,"message":"* Listening on unix:///home/git/gitlab/tmp/sockets/gitlab.socket"}
+{"timestamp":"2025-11-29T21:32:41.730Z","pid":611,"message":"* Listening on http://127.0.0.1:8080"}
+{"timestamp":"2025-11-29T21:32:41.731Z","pid":611,"message":"! WARNING: Detected 2 Thread(s) started in app boot:"}
+{"timestamp":"2025-11-29T21:32:41.731Z","pid":611,"message":"! #\u003cThread:0x0000563fca7db580 /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:334 sleep\u003e - /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:337:in `sleep'"}
+{"timestamp":"2025-11-29T21:32:41.731Z","pid":611,"message":"! #\u003cThread:0x0000563fde56adc8 /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:73 sleep\u003e - /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:91:in `sleep'"}
+{"timestamp":"2025-11-29T21:32:41.731Z","pid":611,"message":"Use Ctrl-C to stop"}

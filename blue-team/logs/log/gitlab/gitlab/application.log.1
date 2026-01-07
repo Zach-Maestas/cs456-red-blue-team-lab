@@ -1,0 +1,161 @@
+# Logfile created on 2025-11-20 07:20:44 +0530 by logger.rb/v1.4.2
+2025-11-20T01:50:44.390Z: Cached record for ApplicationSetting couldn't be loaded, falling back to uncached record: PG::UndefinedTable: ERROR:  relation "application_settings" does not exist
+LINE 1: ...on:sidekiq*/ SELECT "application_settings".* FROM "applicati...
+                                                             ^
+
+2025-11-20T01:50:44.446Z: Cached record for ApplicationSetting couldn't be loaded, falling back to uncached record: PG::UndefinedTable: ERROR:  relation "application_settings" does not exist
+LINE 1: ...cation:web*/ SELECT "application_settings".* FROM "applicati...
+                                                             ^
+
+2025-11-20T01:50:44.911Z: ActiveRecord connection established
+2025-11-20T01:50:45.370Z: Checking state of dynamic postgres partitions
+2025-11-20T01:50:56.556Z: Checking state of dynamic postgres partitions
+2025-11-20T01:50:56.611Z: {:method=>"with_lock_retries", :class=>"Gitlab::Database::Partitioning::PartitionCreator", :message=>"Lock timeout is set", :current_iteration=>1, :lock_timeout_in_ms=>100}
+2025-11-20T01:50:56.625Z: Created partition audit_events_000000 for table audit_events
+2025-11-20T01:50:56.636Z: Created partition audit_events_202511 for table audit_events
+2025-11-20T01:50:56.647Z: Created partition audit_events_202512 for table audit_events
+2025-11-20T01:50:56.659Z: Created partition audit_events_202601 for table audit_events
+2025-11-20T01:50:56.670Z: Created partition audit_events_202602 for table audit_events
+2025-11-20T01:50:56.681Z: Created partition audit_events_202603 for table audit_events
+2025-11-20T01:50:56.692Z: Created partition audit_events_202604 for table audit_events
+2025-11-20T01:50:56.704Z: Created partition audit_events_202605 for table audit_events
+2025-11-20T01:50:56.704Z: {:method=>"with_lock_retries", :class=>"Gitlab::Database::Partitioning::PartitionCreator", :message=>"Migration finished", :current_iteration=>1, :lock_timeout_in_ms=>100}
+2025-11-20T01:50:56.739Z: {:method=>"with_lock_retries", :class=>"Gitlab::Database::Partitioning::PartitionCreator", :message=>"Lock timeout is set", :current_iteration=>1, :lock_timeout_in_ms=>100}
+2025-11-20T01:50:56.746Z: Created partition web_hook_logs_part_0c5294f417_000000 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.753Z: Created partition web_hook_logs_part_0c5294f417_202511 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.760Z: Created partition web_hook_logs_part_0c5294f417_202512 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.766Z: Created partition web_hook_logs_part_0c5294f417_202601 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.773Z: Created partition web_hook_logs_part_0c5294f417_202602 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.781Z: Created partition web_hook_logs_part_0c5294f417_202603 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.787Z: Created partition web_hook_logs_part_0c5294f417_202604 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.799Z: Created partition web_hook_logs_part_0c5294f417_202605 for table web_hook_logs_part_0c5294f417
+2025-11-20T01:50:56.799Z: {:method=>"with_lock_retries", :class=>"Gitlab::Database::Partitioning::PartitionCreator", :message=>"Migration finished", :current_iteration=>1, :lock_timeout_in_ms=>100}
+2025-11-20T01:50:58.025Z: User "Administrator" (admin@example.com) was created
+2025-11-20T01:50:58.628Z: Group "GitLab Instance" was created
+2025-11-20T01:50:59.870Z: GitLab Instance created a new project "GitLab Instance / Monitoring"
+2025-11-20T01:51:00.159Z: `AuthorizedProjectUpdate::ProjectCreateWorker.perform_async` cannot be called inside a transaction as this can lead to
+race conditions when the worker runs before the transaction is committed and
+tries to access a model that has not been saved yet.
+
+Use an `after_commit` hook, or include `AfterCommitQueue` and use a `run_after_commit` block instead.
+
+2025-11-20T01:51:00.645Z: Cannot obtain an exclusive lease. There must be another instance already in execution.
+2025-11-20T01:51:01.684Z: Checking state of dynamic postgres partitions
+2025-11-20T01:51:02.144Z: Checking state of dynamic postgres partitions
+2025-11-20T01:51:17.470Z: ActiveRecord connection established
+2025-11-20T01:51:18.429Z: Checking state of dynamic postgres partitions
+2025-11-20T01:51:21.835Z: Checking state of dynamic postgres partitions
+2025-11-20T01:51:27.560Z: Emails disabled! Interceptor prevented sending mail Access to the GitLab Instance group was granted
+2025-11-20T01:51:29.821Z: ActiveRecord connection disconnected
+2025-11-20T01:51:29.840Z: ActiveRecord connection established
+2025-11-20T01:51:29.852Z: ActiveRecord connection established
+2025-11-20T01:51:29.862Z: ActiveRecord connection established
+2025-11-20T01:51:38.551Z: ActiveRecord connection established
+2025-11-20T01:51:39.590Z: Checking state of dynamic postgres partitions
+2025-11-20T01:52:04.288Z: Checking state of dynamic postgres partitions
+2025-11-20T01:52:04.613Z: Checking state of dynamic postgres partitions
+2025-11-20T01:52:32.038Z: ActiveRecord connection disconnected
+2025-11-20T01:52:32.093Z: ActiveRecord connection established
+2025-11-20T01:52:32.106Z: ActiveRecord connection established
+2025-11-20T01:52:32.111Z: ActiveRecord connection established
+2025-11-20T02:30:11.662Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T03:30:03.130Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T04:30:06.848Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T05:30:42.676Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T06:30:11.910Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T06:51:28.576Z: Checking state of dynamic postgres partitions
+2025-11-20T07:30:08.396Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T08:30:15.629Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T09:30:07.385Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T10:30:06.158Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T11:30:33.638Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T12:30:09.081Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T12:51:26.192Z: Checking state of dynamic postgres partitions
+2025-11-20T13:30:10.006Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T13:54:27.064Z: ActiveRecord connection established
+2025-11-20T13:55:26.756Z: ActiveRecord connection established
+2025-11-20T13:56:26.622Z: ActiveRecord connection established
+2025-11-20T14:30:22.863Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T15:30:31.097Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T16:30:26.649Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T17:30:09.507Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T18:30:16.918Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T18:51:30.399Z: Checking state of dynamic postgres partitions
+2025-11-20T19:30:06.722Z: Refreshing trending projects
+2025-11-20T19:30:06.943Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T20:30:11.665Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T21:30:36.401Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T22:30:36.676Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-20T23:30:33.779Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T00:30:13.903Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T00:51:09.525Z: Checking state of dynamic postgres partitions
+2025-11-21T01:30:02.080Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T01:59:20.209Z: ActiveRecord connection established
+2025-11-21T02:00:20.047Z: ActiveRecord connection established
+2025-11-21T02:01:19.869Z: ActiveRecord connection established
+2025-11-21T02:30:22.499Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T03:30:04.248Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T04:30:06.411Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T05:30:30.845Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T06:30:05.523Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T06:51:04.922Z: Checking state of dynamic postgres partitions
+2025-11-21T07:30:05.962Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T08:30:08.898Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T09:30:05.912Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T10:30:42.651Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T11:30:07.095Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T12:30:38.124Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T12:51:15.936Z: Checking state of dynamic postgres partitions
+2025-11-21T13:30:03.621Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T14:04:13.852Z: ActiveRecord connection established
+2025-11-21T14:05:13.581Z: ActiveRecord connection established
+2025-11-21T14:06:13.520Z: ActiveRecord connection established
+2025-11-21T14:30:18.504Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T15:30:20.279Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T16:30:25.870Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T17:30:17.311Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T18:30:17.813Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T18:51:04.501Z: Checking state of dynamic postgres partitions
+2025-11-21T19:30:11.919Z: Refreshing trending projects
+2025-11-21T19:30:12.132Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T20:30:03.046Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T21:30:10.601Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T22:30:01.506Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-21T23:30:13.020Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T00:30:12.011Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T00:51:12.886Z: Checking state of dynamic postgres partitions
+2025-11-22T01:30:44.079Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T02:09:08.855Z: ActiveRecord connection established
+2025-11-22T02:10:07.154Z: ActiveRecord connection established
+2025-11-22T02:11:07.060Z: ActiveRecord connection established
+2025-11-22T02:30:43.082Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T03:30:11.924Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T04:30:04.597Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T05:30:14.156Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T06:30:15.291Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T06:51:23.870Z: Checking state of dynamic postgres partitions
+2025-11-22T07:30:36.269Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T08:30:18.457Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T09:30:25.792Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T10:30:34.099Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T11:30:03.594Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T12:30:28.927Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T12:51:32.029Z: Checking state of dynamic postgres partitions
+2025-11-22T13:30:37.301Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T14:14:02.178Z: ActiveRecord connection established
+2025-11-22T14:15:00.641Z: ActiveRecord connection established
+2025-11-22T14:16:00.576Z: ActiveRecord connection established
+2025-11-22T14:30:26.383Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T15:30:22.712Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T16:30:22.214Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T17:30:25.114Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T18:30:13.400Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T18:51:17.789Z: Checking state of dynamic postgres partitions
+2025-11-22T19:30:26.028Z: Refreshing trending projects
+2025-11-22T19:30:26.127Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T20:30:16.945Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T21:30:30.066Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T22:30:02.218Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-22T23:30:12.189Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-23T00:30:06.988Z: StuckCiJobsWorker: Cleaning stuck builds
+2025-11-23T00:51:13.817Z: Checking state of dynamic postgres partitions
