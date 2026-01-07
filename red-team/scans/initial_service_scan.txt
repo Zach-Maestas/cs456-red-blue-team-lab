@@ -1,0 +1,33 @@
+# Nmap 7.94SVN scan initiated Wed Dec  3 13:39:48 2025 as: nmap -sV -sC -oN initial_service_scan.txt 192.168.0.153
+Nmap scan report for 192.168.0.153
+Host is up (0.00024s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+445/tcp  open  microsoft-ds?
+2222/tcp open  ssh           OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 64:22:b3:62:0b:93:39:60:39:7d:ce:21:7d:a7:4c:71 (RSA)
+|   256 df:3c:96:2e:32:27:2a:82:f9:7f:49:cd:d7:fb:f5:2a (ECDSA)
+|_  256 7d:5f:2a:be:a9:24:48:fc:15:93:c6:b2:b0:44:f7:9b (ED25519)
+4000/tcp open  nomachine-nx  NoMachine NX Server remote desktop 9.2.18
+8081/tcp open  http          Apache httpd 2.4.25
+| http-title: Login :: Damn Vulnerable Web Application (DVWA) v1.10 *Develop...
+|_Requested resource was login.php
+|_http-server-header: Apache/2.4.25 (Debian)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-robots.txt: 1 disallowed entry 
+|_/
+MAC Address: BC:24:11:38:18:7A (Unknown)
+Service Info: Host: 10.89.1.70; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: -9s
+| smb2-time: 
+|   date: 2025-12-03T20:41:57
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec  3 13:42:35 2025 -- 1 IP address (1 host up) scanned in 167.32 seconds

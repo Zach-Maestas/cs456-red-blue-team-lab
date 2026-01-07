@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Wed Dec  3 13:50:45 2025 as: nmap -p- -sV -T4 -oN full_port_scan.txt 192.168.0.153
+Nmap scan report for 192.168.0.153
+Host is up (0.00018s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT     STATE SERVICE      VERSION
+445/tcp  open  netbios-ssn  Samba smbd 4.6.2
+2222/tcp open  ssh          OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)
+4000/tcp open  nomachine-nx NoMachine NX Server remote desktop 9.2.18
+8081/tcp open  http         Apache httpd 2.4.25 ((Debian))
+MAC Address: BC:24:11:38:18:7A (Unknown)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec  3 13:52:19 2025 -- 1 IP address (1 host up) scanned in 94.17 seconds
