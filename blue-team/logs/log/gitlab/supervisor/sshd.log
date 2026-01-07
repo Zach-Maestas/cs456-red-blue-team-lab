@@ -1,0 +1,44 @@
+Connection from 10.89.1.26 port 37284 on 10.89.1.26 port 22
+Did not receive identification string from 10.89.1.26 port 37284
+Connection from 10.89.1.26 port 44676 on 10.89.1.26 port 22
+Did not receive identification string from 10.89.1.26 port 44676
+Connection from 10.89.1.26 port 60852 on 10.89.1.26 port 22
+Did not receive identification string from 10.89.1.26 port 60852
+Connection from 10.89.1.26 port 39920 on 10.89.1.26 port 22
+Did not receive identification string from 10.89.1.26 port 39920
+Connection from 10.89.1.26 port 55276 on 10.89.1.26 port 22
+Did not receive identification string from 10.89.1.26 port 55276
+Connection from 10.89.1.26 port 54008 on 10.89.1.26 port 22
+Did not receive identification string from 10.89.1.26 port 54008
+Connection from 10.89.1.26 port 54014 on 10.89.1.26 port 22
+Did not receive identification string from 10.89.1.26 port 54014
+Connection from 10.89.1.26 port 57936 on 10.89.1.26 port 22
+Invalid user khaefner from 10.89.1.26 port 57936
+Received disconnect from 10.89.1.26 port 57936:11: Bye Bye [preauth]
+Disconnected from invalid user khaefner 10.89.1.26 port 57936 [preauth]
+Connection from 10.89.1.26 port 44640 on 10.89.1.26 port 22
+Invalid user khaefner from 10.89.1.26 port 44640
+Connection closed by invalid user khaefner 10.89.1.26 port 44640 [preauth]
+Received signal 15; terminating.
+Server listening on 0.0.0.0 port 22.
+Server listening on :: port 22.
+Connection from 10.89.1.27 port 34358 on 10.89.1.27 port 22
+Invalid user khaefner from 10.89.1.27 port 34358
+Received disconnect from 10.89.1.27 port 34358:11: Bye Bye [preauth]
+Disconnected from invalid user khaefner 10.89.1.27 port 34358 [preauth]
+Connection from 10.89.1.27 port 41478 on 10.89.1.27 port 22
+Did not receive identification string from 10.89.1.27 port 41478
+Connection from 10.89.1.27 port 41272 on 10.89.1.27 port 22
+Invalid user khaefner from 10.89.1.27 port 41272
+Received disconnect from 10.89.1.27 port 41272:11: Bye Bye [preauth]
+Disconnected from invalid user khaefner 10.89.1.27 port 41272 [preauth]
+Connection from 10.89.1.27 port 43400 on 10.89.1.27 port 22
+Invalid user khaefner from 10.89.1.27 port 43400
+Received disconnect from 10.89.1.27 port 43400:11: Bye Bye [preauth]
+Disconnected from invalid user khaefner 10.89.1.27 port 43400 [preauth]
+Connection from 10.89.1.27 port 41160 on 10.89.1.27 port 22
+Invalid user khaefner from 10.89.1.27 port 41160
+Connection closed by invalid user khaefner 10.89.1.27 port 41160 [preauth]
+Connection from 10.89.1.27 port 43880 on 10.89.1.27 port 22
+Invalid user khaefner from 10.89.1.27 port 43880
+Connection closed by invalid user khaefner 10.89.1.27 port 43880 [preauth]

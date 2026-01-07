@@ -1,0 +1,152 @@
+# Logfile created on 2025-11-20 07:20:44 +0530 by logger.rb/v1.4.2
+{"severity":"WARN","time":"2025-11-20T01:50:44.391Z","correlation_id":null,"message":"Cached record for ApplicationSetting couldn't be loaded, falling back to uncached record: PG::UndefinedTable: ERROR:  relation \"application_settings\" does not exist\nLINE 1: ...on:sidekiq*/ SELECT \"application_settings\".* FROM \"applicati...\n                                                             ^\n"}
+{"severity":"WARN","time":"2025-11-20T01:50:44.446Z","correlation_id":null,"message":"Cached record for ApplicationSetting couldn't be loaded, falling back to uncached record: PG::UndefinedTable: ERROR:  relation \"application_settings\" does not exist\nLINE 1: ...cation:web*/ SELECT \"application_settings\".* FROM \"applicati...\n                                                             ^\n"}
+{"severity":"DEBUG","time":"2025-11-20T01:50:44.911Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-20T01:50:45.370Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.556Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.611Z","correlation_id":null,"method":"with_lock_retries","class":"Gitlab::Database::Partitioning::PartitionCreator","message":"Lock timeout is set","current_iteration":1,"lock_timeout_in_ms":100}
+{"severity":"INFO","time":"2025-11-20T01:50:56.625Z","correlation_id":null,"message":"Created partition audit_events_000000 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.637Z","correlation_id":null,"message":"Created partition audit_events_202511 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.648Z","correlation_id":null,"message":"Created partition audit_events_202512 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.659Z","correlation_id":null,"message":"Created partition audit_events_202601 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.670Z","correlation_id":null,"message":"Created partition audit_events_202602 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.681Z","correlation_id":null,"message":"Created partition audit_events_202603 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.693Z","correlation_id":null,"message":"Created partition audit_events_202604 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.704Z","correlation_id":null,"message":"Created partition audit_events_202605 for table audit_events"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.704Z","correlation_id":null,"method":"with_lock_retries","class":"Gitlab::Database::Partitioning::PartitionCreator","message":"Migration finished","current_iteration":1,"lock_timeout_in_ms":100}
+{"severity":"INFO","time":"2025-11-20T01:50:56.739Z","correlation_id":null,"method":"with_lock_retries","class":"Gitlab::Database::Partitioning::PartitionCreator","message":"Lock timeout is set","current_iteration":1,"lock_timeout_in_ms":100}
+{"severity":"INFO","time":"2025-11-20T01:50:56.746Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_000000 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.753Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_202511 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.760Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_202512 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.767Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_202601 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.774Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_202602 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.781Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_202603 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.787Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_202604 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.799Z","correlation_id":null,"message":"Created partition web_hook_logs_part_0c5294f417_202605 for table web_hook_logs_part_0c5294f417"}
+{"severity":"INFO","time":"2025-11-20T01:50:56.828Z","correlation_id":null,"method":"with_lock_retries","class":"Gitlab::Database::Partitioning::PartitionCreator","message":"Migration finished","current_iteration":1,"lock_timeout_in_ms":100}
+{"severity":"INFO","time":"2025-11-20T01:50:58.025Z","correlation_id":null,"message":"User \"Administrator\" (admin@example.com) was created"}
+{"severity":"INFO","time":"2025-11-20T01:50:58.629Z","correlation_id":null,"message":"Group \"GitLab Instance\" was created"}
+{"severity":"INFO","time":"2025-11-20T01:50:59.870Z","correlation_id":"053c96ae6f2ff73757697068836ff78a","message":"GitLab Instance created a new project \"GitLab Instance / Monitoring\""}
+{"severity":"ERROR","time":"2025-11-20T01:51:00.159Z","correlation_id":"053c96ae6f2ff73757697068836ff78a","message":"`AuthorizedProjectUpdate::ProjectCreateWorker.perform_async` cannot be called inside a transaction as this can lead to\nrace conditions when the worker runs before the transaction is committed and\ntries to access a model that has not been saved yet.\n\nUse an `after_commit` hook, or include `AfterCommitQueue` and use a `run_after_commit` block instead.\n"}
+{"severity":"INFO","time":"2025-11-20T01:51:00.642Z","correlation_id":null,"event":"authorized_projects_refresh","user_id":1,"authorized_projects_refresh.source":"AuthorizedProjectsWorker","authorized_projects_refresh.rows_deleted_count":0,"authorized_projects_refresh.rows_added_count":0,"authorized_projects_refresh.rows_deleted_slice":[],"authorized_projects_refresh.rows_added_slice":[]}
+{"severity":"ERROR","time":"2025-11-20T01:51:00.645Z","correlation_id":null,"message":"Cannot obtain an exclusive lease. There must be another instance already in execution."}
+{"severity":"INFO","time":"2025-11-20T01:51:01.684Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T01:51:02.144Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"DEBUG","time":"2025-11-20T01:51:17.470Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-20T01:51:18.429Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T01:51:21.836Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T01:51:27.560Z","correlation_id":"3255ec903dc0342e80e9825c5f4cddc1","message":"Emails disabled! Interceptor prevented sending mail Access to the GitLab Instance group was granted"}
+{"severity":"DEBUG","time":"2025-11-20T01:51:29.821Z","correlation_id":null,"message":"ActiveRecord connection disconnected"}
+{"severity":"DEBUG","time":"2025-11-20T01:51:29.841Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-20T01:51:29.853Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-20T01:51:29.863Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-20T01:51:38.552Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-20T01:51:39.590Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T01:52:04.288Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T01:52:04.613Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"DEBUG","time":"2025-11-20T01:52:32.038Z","correlation_id":null,"message":"ActiveRecord connection disconnected"}
+{"severity":"DEBUG","time":"2025-11-20T01:52:32.093Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-20T01:52:32.106Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-20T01:52:32.111Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-20T02:30:11.673Z","correlation_id":"fc1f86d0212352bbabb1f9d7996af247","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T02:51:01.882Z","correlation_id":"952060f0202fe5744094927426184032","event":"authorized_projects_refresh","user_id":1,"authorized_projects_refresh.source":"AuthorizedProjectUpdate::UserRefreshWithLowUrgencyWorker","authorized_projects_refresh.rows_deleted_count":0,"authorized_projects_refresh.rows_added_count":0,"authorized_projects_refresh.rows_deleted_slice":[],"authorized_projects_refresh.rows_added_slice":[]}
+{"severity":"INFO","time":"2025-11-20T03:30:03.132Z","correlation_id":"2fcdbded414c3c234ffe98477c1f5a7d","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T04:30:06.853Z","correlation_id":"9e307c3f3d5a4c73e0fb4bbb2bd8ff7d","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T05:30:42.676Z","correlation_id":"85586277d460a0fd1c776b5e7b9e283c","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T06:30:11.915Z","correlation_id":"6e5d46a444055a1a0e3273d087d42c3f","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T06:51:28.576Z","correlation_id":"1fb8ee41faaea1f0d79cc4e73879a541","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T07:30:08.408Z","correlation_id":"5f09e4bf50af883208524b8c9d9a078b","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T08:30:15.635Z","correlation_id":"bab362ee99f353ad81088fc094c26f52","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T09:30:07.392Z","correlation_id":"f6a0f8c873af6de69359d062193f438e","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T10:30:06.160Z","correlation_id":"ead7860a63907335113fbc6074aaf2d5","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T11:30:33.641Z","correlation_id":"3656027923bce681b57d41745e80fc8c","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T12:30:09.087Z","correlation_id":"f6c24ac6d9011c8d506eb417ce9d1c5d","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T12:51:26.193Z","correlation_id":"1f1d98d614a9474cca78158c89194692","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T13:30:10.016Z","correlation_id":"fe567ac60f72cc4e09d64207fa5de90c","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"DEBUG","time":"2025-11-20T13:54:27.064Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-20T13:55:26.756Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-20T13:56:26.623Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-20T14:30:22.866Z","correlation_id":"c8fc93050c76f177fde27e47fe2f7479","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T15:30:31.104Z","correlation_id":"1b1295fbfcc9d1b22527c14aedd36b12","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T16:30:26.656Z","correlation_id":"e1026dbd1d71153397e6daeeb41d39e5","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T17:30:09.509Z","correlation_id":"4125b8a8c7de65acb9f281ee48fecc01","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T18:30:16.923Z","correlation_id":"f9868d29b73c90b1584daa87acf12f2f","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T18:51:30.399Z","correlation_id":"f60c746d5db32e0b295b8bb2ea2660a9","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-20T19:30:06.724Z","correlation_id":"81e71579c2e95c06acad290a290aeca7","message":"Refreshing trending projects"}
+{"severity":"INFO","time":"2025-11-20T19:30:06.943Z","correlation_id":"aa9622f71439402abbdd98d71b220636","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T20:30:11.666Z","correlation_id":"3df295a8fa5686778f0805ce8aee5024","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T21:30:36.406Z","correlation_id":"a43bfd536de4cb5970065f66855593ca","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T22:30:36.689Z","correlation_id":"6c39c41da24a674a30a2adcf5fc07907","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-20T23:30:33.789Z","correlation_id":"fd29167af3807003b655be4454a1b123","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T00:30:13.905Z","correlation_id":"b55b555c6db5e32a9ce7cab0b1396981","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T00:51:09.525Z","correlation_id":"16f55a90a2b97a0fab510cd1509aa52f","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-21T01:30:02.089Z","correlation_id":"24fe32ea44a4dbc6a76988f960a312d2","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"DEBUG","time":"2025-11-21T01:59:20.210Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-21T02:00:20.047Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-21T02:01:19.869Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-21T02:30:22.503Z","correlation_id":"c2e2dadab613a428af66f0463aed5c2d","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T03:30:04.293Z","correlation_id":"12101095c2418bb535f396bb70cc2408","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T04:30:06.417Z","correlation_id":"9d860168374ce07f57ef62e75471e297","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T05:30:30.856Z","correlation_id":"0e14ac3a3d5050d896143aeb2882ebbe","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T06:30:05.523Z","correlation_id":"cd9d01b41114751226684cd60c7e71ae","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T06:51:04.922Z","correlation_id":"5c4d39e104898e84383fa801fb02e43c","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-21T07:30:05.965Z","correlation_id":"70a0352be70b927fe9c9e3c5f62f1923","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T08:30:08.909Z","correlation_id":"03ff65cfc33acbfedd63455202de482d","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T09:30:05.914Z","correlation_id":"03d31f3ca4f7e0429f87be65cd893848","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T10:30:42.660Z","correlation_id":"a6e384e58d504e68f02a3c121df82219","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T11:30:07.097Z","correlation_id":"a0a00398e039c2549497a4482f9494c6","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T12:30:38.133Z","correlation_id":"b0087c4459de52f32c07128bb5780547","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T12:51:15.936Z","correlation_id":"b1b918dfb1d150b991bd7e1e995bb223","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-21T13:30:03.624Z","correlation_id":"17d531860f94f1928bd922b8a09e449b","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"DEBUG","time":"2025-11-21T14:04:13.852Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-21T14:05:13.581Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-21T14:06:13.520Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-21T14:30:18.511Z","correlation_id":"b663de8cea7acdf07282c270ea17cff0","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T15:30:20.282Z","correlation_id":"c243a78e652203bcb11d4504b865d283","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T16:30:25.870Z","correlation_id":"9248f7af7768639d14e349f2ae993593","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T17:30:17.318Z","correlation_id":"f7070d4d83e997411f1ab7d6cbf59d84","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T18:30:17.815Z","correlation_id":"7a1ad54602ca6e871cbb8a3ac90b1bc7","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T18:51:04.501Z","correlation_id":"866a4b4d5d5a351baacdc86cba2686de","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-21T19:30:11.921Z","correlation_id":"eb0b1ed7b533ff76dc13044768eaa9d2","message":"Refreshing trending projects"}
+{"severity":"INFO","time":"2025-11-21T19:30:12.136Z","correlation_id":"4ee180902b831f336619cd737ca157bf","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T20:30:03.058Z","correlation_id":"d31f7ebf11f439b1b566f809f6529606","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T21:30:10.606Z","correlation_id":"96f3bf4a61282f094d668a7dea47f302","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T22:30:01.508Z","correlation_id":"36b4fb9a29b8b3ab633fc8b40e3eb02e","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-21T23:30:13.023Z","correlation_id":"842b83e47fa5e7a7367a01abe43dc159","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T00:30:12.017Z","correlation_id":"f5eb37eb02a3e7fe038307aab34008d4","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T00:51:12.887Z","correlation_id":"4329b412cd048aca99ee2bb376d2214c","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-22T01:30:44.086Z","correlation_id":"dd9dfe819b52aa06bd4a2176d3228a8e","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"DEBUG","time":"2025-11-22T02:09:08.856Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-22T02:10:07.154Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-22T02:11:07.060Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-22T02:30:43.084Z","correlation_id":"a19d7de0e282eab41c215aea6fc8a25e","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T03:30:11.926Z","correlation_id":"722cab136fe1b0e2915798d739ed40b7","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T04:30:04.608Z","correlation_id":"6615da4df035e653073f2e3875ee4b3f","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T05:30:14.159Z","correlation_id":"e6f5b6a4332790403247324b217a4235","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T06:30:15.301Z","correlation_id":"33ec5b831bedcc766bd2c7f8c361024a","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T06:51:23.870Z","correlation_id":"63cd4cf83696fdb17ded90559ad549e8","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-22T07:30:36.272Z","correlation_id":"e298c432a67a5757e7043be3c77d160a","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T08:30:18.459Z","correlation_id":"95c3298d924933494b14def2bdde63a7","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T09:30:25.796Z","correlation_id":"36e753a80c96df0bbe6e28ee79015328","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T10:30:34.099Z","correlation_id":"0bdade1f53686a0723f0218441e140e6","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T11:30:03.597Z","correlation_id":"a4d1428767155132ab1e6f6fd3fb0ac9","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T12:30:28.927Z","correlation_id":"0e5e36ff0759e818ad195aff7c561435","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T12:51:32.029Z","correlation_id":"5a424b6ec3f5813cb5188bf50e811827","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-22T13:30:37.305Z","correlation_id":"14ebd71e81efa92895c38589a87ca1f9","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"DEBUG","time":"2025-11-22T14:14:02.178Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-22T14:15:00.642Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2025-11-22T14:16:00.577Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2025-11-22T14:30:26.386Z","correlation_id":"ebf6d605feccbcf36cb01bc67c3b0cec","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T15:30:22.714Z","correlation_id":"3cfe96ad20c59f6c3a32598a4ee9696d","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T16:30:22.265Z","correlation_id":"90afe65f09e78a36d8d6eae8ecaba289","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T17:30:25.118Z","correlation_id":"8fbcc7d89c7ad58009462aaaabbf7375","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T18:30:13.485Z","correlation_id":"c4b3e6eaf3d114e79d68813186076a24","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T18:51:17.789Z","correlation_id":"8bd32f03740fb2555f79b7251e93d232","message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2025-11-22T19:30:26.033Z","correlation_id":"295429503866cfd49dee78a18571cea7","message":"Refreshing trending projects"}
+{"severity":"INFO","time":"2025-11-22T19:30:26.135Z","correlation_id":"311b8d7b06e2b8d4bf9c520f98c19c06","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T20:30:16.955Z","correlation_id":"1db426148a9696921ce75761d459376a","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T21:30:30.075Z","correlation_id":"605f36a4b0b030287526c55cd2461e37","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T22:30:02.224Z","correlation_id":"0fa1505161009ac9f9dd093d9ff6c62c","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-22T23:30:12.194Z","correlation_id":"195dba8e0982b80193202e13dd532aba","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-23T00:30:06.990Z","correlation_id":"9818951bdcffcf6b519f33a75d3e28ba","message":"StuckCiJobsWorker: Cleaning stuck builds"}
+{"severity":"INFO","time":"2025-11-23T00:51:13.818Z","correlation_id":"0b31c0939e6bb69d432c0ed2be8e9cfc","message":"Checking state of dynamic postgres partitions"}

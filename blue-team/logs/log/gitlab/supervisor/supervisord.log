@@ -1,0 +1,64 @@
+2025-11-30 02:21:28,799 INFO reaped unknown pid 1241584
+2025-11-30 02:23:01,760 INFO reaped unknown pid 1241717
+2025-11-30 03:01:19,217 WARN received SIGTERM indicating exit request
+2025-11-30 03:01:19,218 INFO waiting for gitaly, puma, gitlab-workhorse, sidekiq, nginx, sshd, cron to die
+2025-11-30 03:01:19,218 INFO stopped: cron (terminated by SIGTERM)
+2025-11-30 03:01:19,219 INFO stopped: sshd (exit status 0)
+2025-11-30 03:01:19,584 INFO stopped: nginx (exit status 0)
+2025-11-30 03:01:22,448 INFO stopped: sidekiq (exit status 0)
+2025-11-30 03:01:22,449 INFO waiting for gitaly, puma, gitlab-workhorse to die
+2025-11-30 03:01:22,451 INFO stopped: gitlab-workhorse (terminated by SIGTERM)
+2025-11-30 03:01:22,890 INFO stopped: puma (terminated by SIGQUIT)
+2025-11-30 03:01:22,890 INFO reaped unknown pid 1212658
+2025-11-30 03:01:22,890 INFO reaped unknown pid 1212754
+2025-11-30 03:01:22,891 INFO reaped unknown pid 1212850
+2025-11-30 03:01:22,925 INFO stopped: gitaly (exit status 0)
+2025-11-30 03:01:45,393 CRIT Supervisor running as root (no user in config file)
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/cron.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/gitaly.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/gitlab-workhorse.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/groups.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/mail_room.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/puma.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/sidekiq.conf" during parsing
+2025-11-30 03:01:45,393 INFO Included extra file "/etc/supervisor/conf.d/sshd.conf" during parsing
+2025-11-30 03:01:45,464 INFO RPC interface 'supervisor' initialized
+2025-11-30 03:01:45,465 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2025-11-30 03:01:45,465 INFO supervisord started with pid 1
+2025-11-30 03:01:46,468 INFO spawned: 'gitaly' with pid 610
+2025-11-30 03:01:46,470 INFO spawned: 'puma' with pid 611
+2025-11-30 03:01:46,472 INFO spawned: 'gitlab-workhorse' with pid 612
+2025-11-30 03:01:46,474 INFO spawned: 'sidekiq' with pid 613
+2025-11-30 03:01:46,476 INFO spawned: 'nginx' with pid 614
+2025-11-30 03:01:46,478 INFO spawned: 'sshd' with pid 620
+2025-11-30 03:01:46,481 INFO spawned: 'cron' with pid 621
+2025-11-30 03:01:47,617 INFO success: gitaly entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-11-30 03:01:47,617 INFO success: puma entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-11-30 03:01:47,617 INFO success: gitlab-workhorse entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-11-30 03:01:47,617 INFO success: sidekiq entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-11-30 03:01:47,617 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-11-30 03:01:47,617 INFO success: sshd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-11-30 03:01:47,617 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-11-30 03:26:20,707 INFO reaped unknown pid 2978
+2025-11-30 03:31:18,429 INFO reaped unknown pid 2979
+2025-11-30 03:42:54,915 INFO reaped unknown pid 4527
+2025-11-30 03:56:15,871 INFO reaped unknown pid 4528
+2025-11-30 03:56:20,543 INFO reaped unknown pid 5738
+2025-11-30 04:00:36,501 INFO reaped unknown pid 6117
+2025-11-30 04:02:43,506 INFO reaped unknown pid 5739
+2025-11-30 04:17:31,686 INFO reaped unknown pid 7614
+2025-11-30 04:23:29,211 INFO reaped unknown pid 8142
+2025-11-30 04:24:15,652 INFO reaped unknown pid 7615
+2025-11-30 04:24:38,129 INFO reaped unknown pid 8242
+2025-11-30 04:24:49,957 INFO reaped unknown pid 8260
+2025-11-30 04:25:44,894 INFO reaped unknown pid 8353
+2025-11-30 04:29:05,680 INFO reaped unknown pid 8354
+2025-11-30 05:01:56,531 INFO reaped unknown pid 11546
+2025-11-30 05:02:10,123 INFO reaped unknown pid 11547
+2025-11-30 05:08:22,177 INFO reaped unknown pid 12118
+2025-11-30 05:09:22,980 INFO reaped unknown pid 12119
+2025-11-30 05:14:31,667 INFO reaped unknown pid 12669
+2025-11-30 19:50:14,201 INFO reaped unknown pid 89774
+2025-11-30 19:54:44,004 INFO reaped unknown pid 90180
+2025-11-30 19:55:06,547 INFO reaped unknown pid 90181

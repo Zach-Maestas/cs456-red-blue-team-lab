@@ -1,0 +1,31 @@
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/carrierwave-1.3.1/lib/carrierwave/sanitized_file.rb:316: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+/usr/lib/ruby/2.7.0/fileutils.rb:206: warning: The called method `mkdir_p' is defined here
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:412: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+/home/git/gitlab/app/models/project_feature_usage.rb:12: warning: The called method is defined here
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/ohai-16.10.6/lib/ohai/plugins/eucalyptus.rb:32: warning: already initialized constant MAC_MATCH
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/ohai-16.10.6/lib/ohai/plugins/eucalyptus.rb:32: warning: previous definition of MAC_MATCH was here
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/ohai-16.10.6/lib/ohai/plugins/eucalyptus.rb:32: warning: already initialized constant MAC_MATCH
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/ohai-16.10.6/lib/ohai/plugins/eucalyptus.rb:32: warning: previous definition of MAC_MATCH was here
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/ohai-16.10.6/lib/ohai/plugins/eucalyptus.rb:32: warning: already initialized constant MAC_MATCH
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/ohai-16.10.6/lib/ohai/plugins/eucalyptus.rb:32: warning: previous definition of MAC_MATCH was here
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+WARNING: PID file creation will be removed in Sidekiq 6.0, see #4045. Please use a proper process supervisor to start and manage your services
+WARNING: Logfile redirection will be removed in Sidekiq 6.0, see #4045. Sidekiq will only log to STDOUT
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/home/git/gitlab/config/initializers/sidekiq.rb:41: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
+/home/git/gitlab/lib/gitlab/sidekiq_middleware.rb:10: warning: The called method `server_configurator' is defined here

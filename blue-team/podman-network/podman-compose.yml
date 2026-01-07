@@ -1,0 +1,48 @@
+version: "3.9"
+
+networks:
+  nexus_net:
+    driver: bridge
+    external: true
+    
+services:
+  # VULNERABLE CONTAINER
+  metasploitable2:
+    image: tleemcjr/metasploitable2
+    container_name: metasploitable2
+    command: ["/bin/sh", "-c", "service rsyslog start; ssh-keygen -A 2>/dev/null || true; /usr/sbin/sshd -D"]
+    ports:
+      - "2222:22"        # SSH exposed to host
+    networks:
+      - nexus_net
+    volumes:
+      - ./logs/metasploitable2:/var/log
+    restart: unless-stopped
+
+  # DECOY 1: NGINX Web Server
+  nginx-decoy:
+    image: docker.io/library/nginx:latest
+    container_name: nginx-decoy
+    ports:
+      - "8080:80"        # Web server decoy
+    networks:
+      - nexus_net
+    volumes:
+      - ./logs/nginx:/var/log/nginx
+    restart: unless-stopped
+
+  # DECOY 2: PostgreSQL Database
+  postgres-decoy:
+    image: docker.io/library/postgres:15-alpine
+    container_name: postgres-decoy
+    environment:
+      POSTGRES_USER: decoy_user
+      POSTGRES_PASSWORD: strongpassword123
+      POSTGRES_DB: decoydb
+    ports:
+      - "5432:5432"      # Database decoy
+    networks:
+      - nexus_net
+    volumes:
+      - ./logs/postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped

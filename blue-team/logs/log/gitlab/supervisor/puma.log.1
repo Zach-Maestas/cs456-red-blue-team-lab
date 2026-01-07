@@ -1,0 +1,454 @@
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"Puma starting in cluster mode..."}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"* Puma version: 5.1.1 (ruby 2.7.1-p83) (\"At Your Service\")"}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"*  Min threads: 1"}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"*  Max threads: 16"}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"*  Environment: production"}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"*   Master PID: 619"}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"*      Workers: 3"}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"*     Restarts: (✔) hot (✖) phased"}
+{"timestamp":"2025-11-20T01:50:28.997Z","pid":619,"message":"* Preloading application"}
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Missing Rails.application.secrets.openid_connect_signing_key for production environment. The secret will be generated and stored in config/secrets.yml.
+{"timestamp":"2025-11-20T01:50:44.448Z","pid":619,"message":"! Unable to load application: ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation \"application_settings\" does not exist\nLINE 1: ...cation:web*/ SELECT \"application_settings\".* FROM \"applicati...\n                                                             ^\n"}
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `prepare': PG::UndefinedTable: ERROR:  relation "application_settings" does not exist (ActiveRecord::StatementInvalid)
+LINE 1: ...cation:web*/ SELECT "application_settings".* FROM "applicati...
+                                                             ^
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `block in prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:739:in `prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `exec_cache'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:658:in `execute_and_clear'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/marginalia-1.10.0/lib/marginalia.rb:95:in `execute_and_clear_with_marginalia'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `exec_query'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:493:in `select_prepared'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:68:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:107:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:46:in `find_by_sql'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:821:in `block in exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:839:in `skip_query_cache_if_necessary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:808:in `exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:626:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:250:in `records'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:245:in `to_ary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:527:in `find_nth_with_limit'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:512:in `find_nth'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:120:in `first'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:151:in `last'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:21:in `last'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:19:in `current_without_cache'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:63:in `rescue in current'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:51:in `current'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:56:in `uncached_application_settings'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:38:in `ensure_application_settings!'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `block in current_application_settings'
+	from /home/git/gitlab/lib/gitlab/null_request_store.rb:34:in `fetch'
+	from /home/git/gitlab/lib/gitlab/safe_request_store.rb:12:in `fetch'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `current_application_settings'
+	from /home/git/gitlab/lib/banzai/filter/asset_proxy_filter.rb:40:in `initialize_settings'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:7:in `block in <top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `class_eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `block in execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:43:in `block in on_load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `on_load'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:6:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `block in load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:291:in `load_dependency'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:666:in `block in load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/notifications.rb:182:in `instrument'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:665:in `load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:625:in `block (2 levels) in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `block in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /usr/lib/ruby/2.7.0/tsort.rb:228:in `block in tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `tsort_each_child'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:226:in `tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:205:in `tsort_each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/application.rb:363:in `initialize!'
+	from /home/git/gitlab/config/environment.rb:7:in `<top (required)>'
+	from config.ru:20:in `require'
+	from config.ru:20:in `block in <main>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:342:in `load_rackup'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:264:in `app'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/runner.rb:138:in `load_and_bind'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cluster.rb:342:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/launcher.rb:182:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cli.rb:80:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/bin/puma:10:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `<main>'
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `prepare': ERROR:  relation "application_settings" does not exist (PG::UndefinedTable)
+LINE 1: ...cation:web*/ SELECT "application_settings".* FROM "applicati...
+                                                             ^
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `block in prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:739:in `prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `exec_cache'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:658:in `execute_and_clear'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/marginalia-1.10.0/lib/marginalia.rb:95:in `execute_and_clear_with_marginalia'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `exec_query'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:493:in `select_prepared'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:68:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:107:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:46:in `find_by_sql'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:821:in `block in exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:839:in `skip_query_cache_if_necessary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:808:in `exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:626:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:250:in `records'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:245:in `to_ary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:527:in `find_nth_with_limit'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:512:in `find_nth'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:120:in `first'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:151:in `last'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:21:in `last'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:19:in `current_without_cache'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:63:in `rescue in current'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:51:in `current'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:56:in `uncached_application_settings'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:38:in `ensure_application_settings!'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `block in current_application_settings'
+	from /home/git/gitlab/lib/gitlab/null_request_store.rb:34:in `fetch'
+	from /home/git/gitlab/lib/gitlab/safe_request_store.rb:12:in `fetch'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `current_application_settings'
+	from /home/git/gitlab/lib/banzai/filter/asset_proxy_filter.rb:40:in `initialize_settings'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:7:in `block in <top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `class_eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `block in execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:43:in `block in on_load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `on_load'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:6:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `block in load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:291:in `load_dependency'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:666:in `block in load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/notifications.rb:182:in `instrument'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:665:in `load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:625:in `block (2 levels) in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `block in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /usr/lib/ruby/2.7.0/tsort.rb:228:in `block in tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `tsort_each_child'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:226:in `tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:205:in `tsort_each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/application.rb:363:in `initialize!'
+	from /home/git/gitlab/config/environment.rb:7:in `<top (required)>'
+	from config.ru:20:in `require'
+	from config.ru:20:in `block in <main>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:342:in `load_rackup'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:264:in `app'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/runner.rb:138:in `load_and_bind'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cluster.rb:342:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/launcher.rb:182:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cli.rb:80:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/bin/puma:10:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `<main>'
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `prepare': PG::UndefinedTable: ERROR:  relation "application_settings" does not exist (ActiveRecord::StatementInvalid)
+LINE 1: ...cation:web*/ SELECT "application_settings".* FROM "applicati...
+                                                             ^
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `block in prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:739:in `prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `exec_cache'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:658:in `execute_and_clear'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/marginalia-1.10.0/lib/marginalia.rb:95:in `execute_and_clear_with_marginalia'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `exec_query'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:493:in `select_prepared'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:68:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:107:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:46:in `find_by_sql'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:821:in `block in exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:839:in `skip_query_cache_if_necessary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:808:in `exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:626:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:250:in `records'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:245:in `to_ary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:527:in `find_nth_with_limit'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:512:in `find_nth'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:120:in `first'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:151:in `last'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:21:in `last'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:19:in `current_without_cache'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:55:in `current'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:56:in `uncached_application_settings'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:38:in `ensure_application_settings!'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `block in current_application_settings'
+	from /home/git/gitlab/lib/gitlab/null_request_store.rb:34:in `fetch'
+	from /home/git/gitlab/lib/gitlab/safe_request_store.rb:12:in `fetch'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `current_application_settings'
+	from /home/git/gitlab/lib/banzai/filter/asset_proxy_filter.rb:40:in `initialize_settings'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:7:in `block in <top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `class_eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `block in execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:43:in `block in on_load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `on_load'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:6:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `block in load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:291:in `load_dependency'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:666:in `block in load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/notifications.rb:182:in `instrument'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:665:in `load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:625:in `block (2 levels) in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `block in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /usr/lib/ruby/2.7.0/tsort.rb:228:in `block in tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `tsort_each_child'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:226:in `tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:205:in `tsort_each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/application.rb:363:in `initialize!'
+	from /home/git/gitlab/config/environment.rb:7:in `<top (required)>'
+	from config.ru:20:in `require'
+	from config.ru:20:in `block in <main>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:342:in `load_rackup'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:264:in `app'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/runner.rb:138:in `load_and_bind'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cluster.rb:342:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/launcher.rb:182:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cli.rb:80:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/bin/puma:10:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `<main>'
+/home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `prepare': ERROR:  relation "application_settings" does not exist (PG::UndefinedTable)
+LINE 1: ...cation:web*/ SELECT "application_settings".* FROM "applicati...
+                                                             ^
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:744:in `block in prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:739:in `prepare_statement'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `exec_cache'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql_adapter.rb:658:in `execute_and_clear'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/marginalia-1.10.0/lib/marginalia.rb:95:in `execute_and_clear_with_marginalia'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `exec_query'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:493:in `select_prepared'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/database_statements.rb:68:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:107:in `select_all'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:46:in `find_by_sql'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:821:in `block in exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:839:in `skip_query_cache_if_necessary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:808:in `exec_queries'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:626:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:250:in `records'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation.rb:245:in `to_ary'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:527:in `find_nth_with_limit'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:512:in `find_nth'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:120:in `first'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/relation/finder_methods.rb:151:in `last'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/querying.rb:21:in `last'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:19:in `current_without_cache'
+	from /home/git/gitlab/app/models/concerns/cacheable_attributes.rb:55:in `current'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:56:in `uncached_application_settings'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:38:in `ensure_application_settings!'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `block in current_application_settings'
+	from /home/git/gitlab/lib/gitlab/null_request_store.rb:34:in `fetch'
+	from /home/git/gitlab/lib/gitlab/safe_request_store.rb:12:in `fetch'
+	from /home/git/gitlab/lib/gitlab/current_settings.rb:11:in `current_application_settings'
+	from /home/git/gitlab/lib/banzai/filter/asset_proxy_filter.rb:40:in `initialize_settings'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:7:in `block in <top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `class_eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:71:in `block in execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:61:in `with_execution_control'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:66:in `execute_hook'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:43:in `block in on_load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/lazy_load_hooks.rb:42:in `on_load'
+	from /home/git/gitlab/config/initializers/asset_proxy_settings.rb:6:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `block in load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:291:in `load_dependency'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/dependencies.rb:318:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:666:in `block in load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activesupport-6.0.3.4/lib/active_support/notifications.rb:182:in `instrument'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:665:in `load_config_initializer'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:625:in `block (2 levels) in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/engine.rb:624:in `block in <class:Engine>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:32:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /usr/lib/ruby/2.7.0/tsort.rb:228:in `block in tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:50:in `tsort_each_child'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:415:in `each_strongly_connected_component_from'
+	from /usr/lib/ruby/2.7.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `call'
+	from /usr/lib/ruby/2.7.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /usr/lib/ruby/2.7.0/tsort.rb:226:in `tsort_each'
+	from /usr/lib/ruby/2.7.0/tsort.rb:205:in `tsort_each'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/application.rb:363:in `initialize!'
+	from /home/git/gitlab/config/environment.rb:7:in `<top (required)>'
+	from config.ru:20:in `require'
+	from config.ru:20:in `block in <main>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:342:in `load_rackup'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/configuration.rb:264:in `app'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/runner.rb:138:in `load_and_bind'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cluster.rb:342:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/launcher.rb:182:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/lib/puma/cli.rb:80:in `run'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/puma-5.1.1/bin/puma:10:in `<top (required)>'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `load'
+	from /home/git/gitlab/vendor/bundle/ruby/2.7.0/bin/puma:23:in `<main>'
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"Puma starting in cluster mode..."}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"* Puma version: 5.1.1 (ruby 2.7.1-p83) (\"At Your Service\")"}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"*  Min threads: 1"}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"*  Max threads: 16"}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"*  Environment: production"}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"*   Master PID: 746"}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"*      Workers: 3"}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"*     Restarts: (✔) hot (✖) phased"}
+{"timestamp":"2025-11-20T01:50:45.448Z","pid":746,"message":"* Preloading application"}
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+{"timestamp":"2025-11-20T01:51:29.542Z","pid":746,"message":"* Listening on unix:///home/git/gitlab/tmp/sockets/gitlab.socket"}
+{"timestamp":"2025-11-20T01:51:29.542Z","pid":746,"message":"* Listening on http://127.0.0.1:8080"}
+{"timestamp":"2025-11-20T01:51:29.542Z","pid":746,"message":"! WARNING: Detected 2 Thread(s) started in app boot:"}
+{"timestamp":"2025-11-20T01:51:29.542Z","pid":746,"message":"! #\u003cThread:0x0000565046c14188 /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:334 sleep\u003e - /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:337:in `sleep'"}
+{"timestamp":"2025-11-20T01:51:29.542Z","pid":746,"message":"! #\u003cThread:0x000056505643ba78 /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:73 sleep\u003e - /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:91:in `sleep'"}
+{"timestamp":"2025-11-20T01:51:29.542Z","pid":746,"message":"Use Ctrl-C to stop"}
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"Puma starting in cluster mode..."}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"* Puma version: 5.1.1 (ruby 2.7.1-p83) (\"At Your Service\")"}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"*  Min threads: 1"}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"*  Max threads: 16"}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"*  Environment: production"}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"*   Master PID: 972"}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"*      Workers: 3"}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"*     Restarts: (✔) hot (✖) phased"}
+{"timestamp":"2025-11-20T01:51:48.086Z","pid":972,"message":"* Preloading application"}
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+{"timestamp":"2025-11-20T01:52:31.744Z","pid":972,"message":"* Listening on unix:///home/git/gitlab/tmp/sockets/gitlab.socket"}
+{"timestamp":"2025-11-20T01:52:31.745Z","pid":972,"message":"* Listening on http://127.0.0.1:8080"}
+{"timestamp":"2025-11-20T01:52:31.745Z","pid":972,"message":"! WARNING: Detected 2 Thread(s) started in app boot:"}
+{"timestamp":"2025-11-20T01:52:31.745Z","pid":972,"message":"! #\u003cThread:0x00005561a258fe90 /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:334 sleep\u003e - /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/activerecord-6.0.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:337:in `sleep'"}
+{"timestamp":"2025-11-20T01:52:31.745Z","pid":972,"message":"! #\u003cThread:0x00005561b2519aa0 /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:73 sleep\u003e - /home/git/gitlab/vendor/bundle/ruby/2.7.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:91:in `sleep'"}
+{"timestamp":"2025-11-20T01:52:31.745Z","pid":972,"message":"Use Ctrl-C to stop"}
