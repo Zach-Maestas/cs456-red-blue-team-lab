@@ -15,11 +15,9 @@ To still demonstrate a realistic incident-response investigation, I analyzed an 
 ## What’s in this folder
 
 - `podman-compose.yml` (environment artifacts: services + layout)
-- `podman-compose-structure.png` (diagram/screenshot of compose structure)
-- `capture.pcap` (network capture for validation)
-- `ufw.log` (host firewall telemetry)
-- `log/` (service/system logs from the dataset)
-- `incident-report/` (full write-up)
+- `services.pdf` (diagram/descriptions of the Podman services)
+- `logs/` (service/system logs from the dataset)
+- `report/` (full write-up)
 
 ## Executive summary (instructor dataset)
 
