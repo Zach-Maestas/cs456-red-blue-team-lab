@@ -4,111 +4,102 @@
 **Incident ID:** ZachM-20251205  
 **Report Date:** 2025-12-07
 
-This folder documents a blue team incident-response workflow for an **authorized CS456 lab** environment (Podman services + host firewall logging + packet capture).
+This folder documents a blue team incident-response workflow for an authorized CS456 lab environment (Podman services + host firewall logging + packet capture).
 
 ## Important note (simulation dataset)
 
-My assigned red team partner did not generate attack traffic against my deployed lab environment, which is why my original incident report documents “no observed attack” for my live environment. :contentReference[oaicite:1]{index=1}  
-To still demonstrate a realistic incident-response investigation, I analyzed an **instructor-provided log + packet-capture dataset** that *does* contain attack activity. The findings in this README reflect **that instructor dataset** (simulated incident), not my live environment.
+My assigned red team partner did not generate attack traffic against my deployed lab environment, which is why my original incident report documents “no observed attack” for my live environment.
+
+To still demonstrate a realistic incident-response investigation, I analyzed an **instructor-provided log + packet-capture dataset** that **does** contain attack activity. The findings in this README reflect that **instructor dataset** (simulated incident), not my live environment.
 
 ## What’s in this folder
 
-- `podman-compose.yml` / environment artifacts (lab services + layout)
+- `podman-compose.yml` (environment artifacts: services + layout)
+- `podman-compose-structure.png` (diagram/screenshot of compose structure)
 - `capture.pcap` (network capture for validation)
 - `ufw.log` (host firewall telemetry)
-- `log/` (service and system logs collected from the vulnerable container / host)
+- `log/` (service/system logs from the dataset)
+- `incident-report/` (full write-up)
 
 ## Executive summary (instructor dataset)
 
-**Observed activity:** Recon/scanning + SSH authentication pressure (attack activity present).  
-**Confirmed compromise:** Not proven from available evidence in this dataset.
+**Observed activity:** Recon/scanning + SSH authentication pressure (attack activity present)  
+**Confirmed compromise:** Not proven from the available evidence in this dataset
 
 At a high level, the dataset shows:
-- Broad **TCP SYN probing** across many internal targets/ports (recon / scanning behavior).
-- **SSH authentication failures** recorded (failed login attempts).
-- No recorded HTTP or PostgreSQL application activity in the provided `nginx` and `postgresql` logs (they are empty in this dataset).
-
-This is still a useful blue-team exercise: it shows how to triage scanning, validate auth activity, and document what evidence supports (or fails to support) a compromise.
+- Broad TCP SYN probing across many internal targets/ports (recon/scanning behavior)
+- SSH authentication failures recorded (failed login attempts)
+- No recorded HTTP or PostgreSQL activity in the provided `nginx` / `postgresql` logs (those files are empty in this dataset)
 
 ## Detection and analysis
 
-### 1) Recon / port scanning behavior (host firewall evidence)
+### 1) Recon / port scanning behavior (UFW firewall evidence)
 
 `ufw.log` shows repeated TCP SYN traffic consistent with scanning/recon:
-- Large volume of TCP SYN attempts from a single internal source
-- Targets spread across dozens of internal destinations
-- Frequent probing of **SSH (TCP/22)** plus additional high ports
+- High-volume SYN attempts from internal sources
+- Targets spread across many internal destinations
+- Frequent probing of SSH (TCP/22) plus additional ports
 
-**Why it matters:** This is a common precursor to exploitation. Even if no compromise is confirmed, this is “raise a flag and investigate” activity.
+**Why it matters:** This type of activity is a common precursor to exploitation. Even if compromise isn’t confirmed, it’s enough to trigger investigation and hardening actions.
 
-### 2) SSH authentication activity (container/system evidence)
+### 2) SSH authentication activity (system logs)
 
-The dataset includes failed SSH login activity (btmp/failed-login records), consistent with:
-- Repeated login attempts against a single username
-- Attempts originating from a small set of internal attacker IPs
+The dataset includes failed SSH authentication activity consistent with:
+- Repeated login attempts
+- Attempts originating from a small set of internal source IPs
 
-**Why it matters:** This indicates credential guessing / brute-force style behavior or targeted access attempts. In a real environment, this would trigger alerting and immediate hardening actions (rate limiting, key-only auth, IP restrictions).
+**Why it matters:** This indicates credential guessing or targeted access attempts. In a real environment this would trigger alerting and immediate control changes (key-only auth, rate limiting, access restrictions).
 
 ### 3) Web and database decoys (no recorded interaction in this dataset)
 
-The provided logs for:
+The following logs are empty in the dataset:
 - `log/nginx/access.log`
 - `log/nginx/error.log`
 - `log/postgresql/postgresql-12-main.log`
 
-…are empty in this dataset, so there’s no evidence here of web exploitation or database authentication attempts.
+**Interpretation:** The observed attack activity in this dataset is concentrated on recon + SSH authentication pressure (or logging for web/DB was not configured to capture traffic). Either way, there is no evidence in these files of web/DB exploitation.
 
-**Interpretation:** Attack activity in this dataset is concentrated on recon + SSH auth pressure, not web/DB interaction (or logging may not have captured it).
+### 4) Packet capture (`capture.pcap`)
 
-### 4) Packet capture validation
-
-`capture.pcap` is included for packet-level validation:
+A packet capture is included for packet-level validation:
 - Confirm scanning patterns and targeted services
-- Confirm whether any SSH sessions fully establish
-- Look for post-auth activity (if any) such as callbacks, downloads, or lateral movement
+- Confirm whether SSH sessions fully establish
+- Look for post-auth activity (downloads, callbacks, lateral movement)
 
-This README focuses on log-driven conclusions, with the pcap serving as the supporting “ground truth” dataset.
+This README focuses on log-driven conclusions, with the pcap serving as supporting evidence for deeper review.
 
 ## Timeline (instructor dataset window)
 
-- Firewall log window covers: **2025-11-30 00:00 to ~07:26 (local timestamps)**  
-- SSH failed logins appear around **Nov 29–30** (failed-auth evidence)
-
-This shows attack-like activity over multiple hours rather than a single one-off probe.
+- Firewall log window spans approximately: **2025-11-30 00:00 to ~07:26** (local timestamps)
+- Failed SSH authentication evidence appears within the same general time window
 
 ## Scope and impact assessment (simulated incident)
 
-Based on the evidence available in this dataset:
-- **Recon and credential pressure occurred**
-- **No confirmed privileged session, data access, or persistence** is proven from the provided artifacts
+Based on the available evidence in the instructor dataset:
+- Recon and credential pressure occurred
+- No confirmed privileged session, data access, persistence, or service disruption is proven from the provided artifacts
 
-Impact is assessed as **attempted intrusion / suspicious activity**, with insufficient evidence to declare a successful breach from this dataset alone.
+**Impact assessment:** Attempted intrusion / suspicious activity, with insufficient evidence to declare a successful breach from this dataset alone.
 
-## Containment, eradication, and recovery (recommended actions)
-
-If this were my live environment, the immediate response would be:
+## Recommended response actions (what I would do in production)
 
 **Containment**
-- Restrict SSH exposure (allowlist source IPs or require VPN/bastion)
-- Temporarily block offending IPs observed in failed-auth + scan telemetry
-- Increase logging verbosity for auth + network events
+- Restrict SSH exposure (allowlist source IPs, require VPN/bastion, or close external access entirely)
+- Temporarily block offending IPs observed in scan/auth activity
+- Increase logging/alerting for auth failures and connection bursts
 
 **Eradication / Hardening**
-- Disable password auth; enforce key-only SSH
+- Disable password authentication and enforce SSH keys
 - Disable direct root login (`PermitRootLogin no`)
 - Add rate limiting (fail2ban or equivalent)
-- Validate UFW rules so only required ports are reachable
+- Verify firewall policy: only required ports reachable
 
 **Recovery**
-- Review accounts, rotate credentials/keys as needed
-- Confirm integrity of configs and containers
-- Preserve logs + pcap as evidence
+- Rotate keys/credentials as needed
+- Review users, sudoers, and configs for tampering
+- Preserve logs + pcap for evidence and post-incident review
 
 ## Lessons learned
 
-- Even when your *live* lab doesn’t get attacked, you can still demonstrate incident-response skill by investigating a realistic dataset and clearly separating **simulation findings** from **real environment findings**. :contentReference[oaicite:2]{index=2}
-- Defensive work includes stating what you *can’t* prove from evidence, not just what you can.
-
-## Responsible use statement
-
-All activity and artifacts in this repository are from an **authorized university lab** and are shared for educational/portfolio purposes only.
+- Incident response includes documenting what happened **and** what you cannot prove from evidence.
+- Even when a live environment is not attacked, you can still demonstrate IR competency by analyzing a realistic dataset and clearly labeling simulated fin
